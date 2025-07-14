@@ -1,15 +1,12 @@
 <script setup>
-import Header from './components/Header.vue';
+import { defineAsyncComponent } from 'vue';
+const Navbar = defineAsyncComponent(() => import('@/components/layout/Navbar.vue'))
  </script>
 
 <template>
-  <div>
-    <header>
-      <Header></Header>           
-    </header>
+  <div class="bg-[#D4EBF8] dark:bg-[#080326] min-h-screen">
+    <Navbar/>
   </div>
 </template>
 
-<style scoped>
 
-</style>
