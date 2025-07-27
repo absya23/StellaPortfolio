@@ -1,4 +1,15 @@
 @import "tailwindcss";
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --color-primary: #000957;
+    --color-secondary: #ffeb00;
+}
+
+@utility stroke-text-* {
+    --tw-text-opacity: 1;
+    -webkit-text-stroke-width: 1.4px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: --value(--color-*);
+}
