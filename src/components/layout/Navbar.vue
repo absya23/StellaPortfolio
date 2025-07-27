@@ -1,6 +1,6 @@
 <template>
     <div>
-        <header class="fixed top-0 left-0 w-full h-full">
+        <header class="fixed top-0 left-0 w-full z-1000">
             <div class="flex justify-between items-center lg:px-12 relative z-20">
                 <div class="text-3xl font-bold dark:text-white">LOGO</div>
                 <!-- mobile toggle button -->
@@ -51,7 +51,7 @@ const scrollToSection = (href) => {
     isMenuOpen.value = false;
     const section = document.querySelector(href);
     if(section) {
-        section.scrollToView({behavior: 'smooth'});
+        section.scrollIntoView({behavior: 'smooth'});
     }
 }
 
