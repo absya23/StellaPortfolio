@@ -4,6 +4,9 @@ const Navbar = defineAsyncComponent(() => import('@/components/layout/Navbar.vue
 const HeroSection = defineAsyncComponent(() => import('@/components/layout/HeroSection.vue'))
 const Counter = defineAsyncComponent(() => import('@/components/layout/Counter.vue'))
 const Service = defineAsyncComponent(() => import('@/components/layout/Service.vue'))
+const Skills = defineAsyncComponent(() => import('@/components/layout/Skills.vue'))
+const Whyme = defineAsyncComponent(() => import('@/components/layout/Whyme.vue'))
+const Projects = defineAsyncComponent(() => import('@/components/layout/Projects.vue'))
  </script>
 
 <template>
@@ -12,6 +15,9 @@ const Service = defineAsyncComponent(() => import('@/components/layout/Service.v
     <HeroSection/>
     <Counter/>
     <Service/>
+    <Skills/>
+    <Whyme/>
+    <Projects/>
   </div>
 </template>
 

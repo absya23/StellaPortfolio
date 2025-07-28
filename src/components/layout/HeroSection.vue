@@ -1,5 +1,5 @@
 <template >
-    <section data-aos="zoom-in" class="flex justify-center items-center dark:text-white min-h-screen mt-10 lg:mt-0">
+    <section data-aos="zoom-in" class="flex justify-center items-center dark:text-white min-h-[500px] h-screen mt-10 lg:mt-0">
         <header class="absolute w-1/2 aspect-[16/5] -skew-x-12 rounded-full bg-gradient-to-r from-[#00c6cc] via-[#785ae4] to-secondary opacity-30 dark:opacity-20 blur-[100px] left-10 top-0 hidden md:block"></header>
          <header class="absolute w-1/2 aspect-[16/5] -skew-x-12 rounded-full bg-gradient-to-r from-[#00c6cc] via-[#785ae4] to-secondary opacity-30 dark:opacity-20 blur-[100px] right-10 bottom-0 hidden md:block"></header>
         <main class="absolute grid lg:grid-cols-2 grid-cols-1 items-center p-2 lg:p-8 ">
@@ -21,7 +21,7 @@
             <aside class="container flex justify-center lg:justify-end mt-20 lg:mt-0 items-center flex-wrap">
                 <figure class="card relative m-[30px] md:w-[420px] md:h-[420px] md:before:w-[450px] md:before:h-[450px] w-[280px] h-350px] before:w-[300px] before:h-[300px] before:border-[25px] before:border-primary before:shadow-[7px_7px_21px_primary,_-7px_-7px_21px_primary] dark:before:border-secondary dark:before:shadow-[7px_7px_21px_secondary,_-7px_-7px_21px_secondary]">
                    <div class="relative overflow-hidden w-full h-full bg-cover transform translate-x-[25px] translate-y-[25px]">
-                    <img src="../../assets/images/ChauThach1.jpg" alt="Hero picture" class="w-full h-full object-cover" loading="lazy">
+                    <img src="/src/assets/images/ChauThach1.jpg" alt="Hero picture" class="w-full h-full object-cover" loading="lazy">
                    </div> 
                 </figure>
             </aside>
