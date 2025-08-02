@@ -1,5 +1,5 @@
 <template>
-    <section class="p-16">
+    <section class="">
         <header class="text-center ">
             <h3 class="text-4xl font-bold text-primary dark:text-white">Education</h3>
         </header>
@@ -27,8 +27,6 @@
 import { ref } from 'vue';
 
 const Education = ref([
-    {duration: '10/2020 - 04/2025', school: 'School 1', degree: 'Software Engineer'},
-    {duration: '10/2020 - 04/2025', school: 'School 1', degree: 'Software Engineer'},
-
+    {duration: '10/2020 - 04/2025', school: 'University of Information Technology - Vietnam National University HCMC', degree: 'Bachelor of E-Commerce'},
 ])
 </script>

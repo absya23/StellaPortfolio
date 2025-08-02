@@ -62,8 +62,7 @@ const props = defineProps({
     },
 })
 const resolvedImage = computed(() => {
-//   return new URL(`@/assets/images/${props.image}`, import.meta.url).href
-return '/src/assets/images/'+props.image;
+    return '/src/assets/images/'+props.image;
 })
 </script>
 <style>

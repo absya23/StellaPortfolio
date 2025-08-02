@@ -1,5 +1,5 @@
 <template>
-    <section id="projects" class="relative w-11/12 pt-1 pb-5 mx-auto">
+    <section id="projects" class="relative w-11/12 pt-1 pb-5 mx-auto mt-32">
         <SectionHeader title="My Projects"/>
         <!-- navigation -->
         <button class="swiper-prev absolute top-2/3 left-4 transform -translate-y-1/2 z-10 text-white dark:bg-secondary bg-primary p-4 rounded-full">
@@ -148,6 +148,13 @@ const projects = ref([
         &.swiper-pagination-bullet-active {
             opacity: 1;
             width: 50px;
+        }
+    }
+}
+.dark {
+    .swiper-pagination {
+        .swiper-pagination-bullet {
+            background-color: var(--secondary-color);
         }
     }
 }

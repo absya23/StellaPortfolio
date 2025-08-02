@@ -19,5 +19,9 @@
     --primary-color: #000957;
     --fourth-color: #344CB7;
     --third-color: #577BC1;
-    --second-color: #FFEB00;
+    --secondary-color: #FFEB00;
+}
+
+html {
+    scroll-padding-top: 80px;
 }

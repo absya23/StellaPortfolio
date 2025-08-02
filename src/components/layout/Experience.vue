@@ -1,5 +1,5 @@
 <template>
-    <section class="p-16">
+    <section class="">
         <header class="text-center ">
             <h3 class="text-4xl font-bold text-primary dark:text-white">Experience</h3>
         </header>
@@ -15,7 +15,7 @@
                         <header>
                             <h3 class="text-xl md:text-2xl font-semibold uppercase text-secondary">{{ item.company }}</h3>
                         </header>
-                        <p class="text-sm md:text-base text-white">{{ item.degree }}</p>
+                        <p class="text-sm md:text-base text-white">{{ item.title }}</p>
                         <p class="text-sm md:text-base text-white">{{ item.duration }}</p>
                     </section>
                 </article>
@@ -28,14 +28,9 @@ import { ref } from 'vue';
 
 const Experience = ref([
     {
-        duration: '10/2020 - 04/2025', 
+        duration: '08/2023 - current', 
         title: 'Web developer', 
-        company: 'ABC company'
-    },
-    {
-        duration: '10/2020 - 04/2025', 
-        title: 'School 1', 
-        company: 'Software Engineer'
+        company: 'Sieu Kinh Doanh Media and Advertising Company Limited'
     },
 
 ])

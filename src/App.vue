@@ -14,30 +14,29 @@ import LoadingSpinner from './components/layout/LoadingSpinner.vue';
  </script>
 
 <template>
-  <div class="bg-[#D4EBF8] dark:bg-[#080326] min-h-screen">
-    <Suspense>
-      <template #default>
-        <div>
-          <Navbar/>
-          <HeroSection/>
-          <Counter/>
-          <Service/>
-          <Skills/>
-          <Whyme/>
-          <Projects/>
-          <Contact/>
-          <Footer/>
-          <BackToTop/>
-        </div>
-      </template>
-      <template #fallback>
-        <div class="flex justify-center items-center min-h-screen">
-          <LoadingSpinner/>
-        </div>
-      </template>
-    </Suspense>
-
-  </div>
+    <div class="bg-[#D4EBF8] dark:bg-[#080326] min-h-screen">
+    	<Suspense>
+      		<template #default>
+        		<div>
+					<Navbar/>
+					<HeroSection/>
+					<Counter/>
+					<Service/>
+					<Skills/>
+					<Whyme/>
+					<Projects/>
+					<Contact/>
+					<Footer/>
+					<BackToTop/>
+        		</div>
+      		</template>
+      		<template #fallback>
+        		<div class="flex justify-center items-center min-h-screen">
+          			<LoadingSpinner/>
+        		</div>
+      		</template>
+    	</Suspense>
+  	</div>
 </template>
 
 
