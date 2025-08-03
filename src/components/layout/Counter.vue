@@ -1,7 +1,7 @@
 <template>
     <section class="mt-20 lg:mt-0 w-full relative text-white flex justify-center">
-        <div class="container mx-auto">
-            <ul ref="statsSection" class="relative z-1 p-6 mx-auto w-11/12 lg:mx-0 rounded-3xl border dark:bg-[#ffffff29] bg-primary shadow-lg md:divide-x grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 lg:gap-12 border-secondary divide-secondary text-white">
+        <div class="container mx-auto px-4 md:px-0">
+            <ul ref="statsSection" class="relative z-1 p-6 mx-auto w-full lg:mx-0 rounded-3xl border dark:bg-[#ffffff29] bg-primary shadow-lg md:divide-x grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 lg:gap-12 border-secondary divide-secondary text-white">
                 <li class="text-center" v-for="elements in numbers" :key="elements.id">
                     <h2 class="font-semibold flex justify-center text-xl sm:text-2xl md:text-4xl w-full">+ <CountUp v-if="hasIntersected" :endVal="elements.number"></CountUp></h2>
                     <p class="mt-2">{{ elements.title }}</p>

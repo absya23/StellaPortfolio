@@ -1,8 +1,8 @@
 <template>
     <section id="services" class="relative text-white mt-32">
+        <SectionHeader title="My Services"/>
         <div class="container mx-auto">
-            <SectionHeader title="My Services"/>
-            <div class="mt-20 py-8 xl:p-16 px-4 sm:py-16 grid grid-cols-1 gap-6 pt-10 sm:grid-cols-2 md:gap-10 md:pt-12 lg:grid-cols-4">
+            <div class="mt-20 py-8 px-4 md:px-0 sm:py-16 grid grid-cols-1 gap-6 pt-10 sm:grid-cols-2 md:gap-10 md:pt-12 lg:grid-cols-4">
                 <article class="mb-[24px]" v-for="element in services" :key="element.id">
                     <div class="mt-[30px] relative flex flex-col justify-center text-center rounded-[30px] border border-secondary dark:bg-[#ffffff29] bg-primary" data-aos="fade-up" :data-aos-delay="element.id*100">
                         <div class="mt-[-30px] flex justify-center relative">

@@ -19,9 +19,7 @@
                     <!-- navbar link -->
                     <nav 
                     :class="[
-                            `fixed inset-0 z-20 flex flex-col items-center justify-center bg-primary md:relative md:bg-transparent md:flex md:justify-between md:flex-row ${
-                                isMenuOpen ? 'block' : 'hidden'
-                            }
+                            `fixed inset-0 z-20 flex-col items-center justify-center bg-primary md:relative md:bg-transparent md:justify-between md:flex-row hidden md:flex
                             `,
                     ]">
                         <ul class="flex flex-col items-center space-y-5 md:flex-row md:space-x-5 md:space-y-0">
@@ -37,7 +35,23 @@
                 </div>
             </div>
         </header>
-        
+        <nav 
+                    :class="[
+                            `fixed inset-0 z-20 flex-col items-center justify-center bg-primary md:hidden ${
+                                isMenuOpen ? 'flex' : 'hidden'
+                            }
+                            `,
+                    ]">
+                        <ul class="w-full flex flex-col items-center space-y-5 md:flex-row md:space-x-5 md:space-y-0">
+                            <li v-for="Item in Menu" :key="Item.name" class="w-full">
+                                <button class="w-full block cursor-pointer transition ease-linear md:text-lg lg:text-xl font-bold text-white md:text-primary hover:text-secondary dark:text-white dark:hover:text-secondary bg-transparent" @click="scrollToSection(Item.href)">{{ Item.name }}</button>
+                            </li>
+                        </ul>
+                        <button @click="toggleDarkMode" class="text-white ml-20 z-10 hidden md:block">
+                            <Icon v-if="!isDarkMode" icon="material-symbols-light:moon-stars" class="text-4xl text-primary"></Icon>
+                            <Icon v-else icon="material-symbols-light:sunny" class="text-4xl text-secondary"></Icon>
+                        </button>
+                    </nav>
     </div>
 </template>
 <script setup>

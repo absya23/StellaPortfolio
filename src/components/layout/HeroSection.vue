@@ -2,30 +2,32 @@
     <section data-aos="zoom-in" class="flex flex-col lg:flex-row justify-center items-center dark:text-white min-h-[500px] lg:h-screen pt-[100px] lg:pt-0 ">
         <header class="absolute w-1/2 aspect-[16/5] -skew-x-12 rounded-full bg-gradient-to-r from-[#00c6cc] via-[#785ae4] to-secondary opacity-30 dark:opacity-20 blur-[100px] left-10 top-0 hidden md:block"></header>
         <header class="absolute w-1/2 aspect-[16/5] -skew-x-12 rounded-full bg-gradient-to-r from-[#00c6cc] via-[#785ae4] to-secondary opacity-30 dark:opacity-20 blur-[100px] right-10 bottom-0 hidden md:block"></header>
-        <main class="relative lg:absolute grid lg:grid-cols-2 grid-cols-1 items-center p-2 lg:p-8 ">
-            <header class="text-center lg:text-left">
-                <h1 class="mb-6 text-4xl md:text-5xl lg:text-6xl font-bold">
-                    👋 Hi, I'm <span class="text-secondary stroke-text-primary dark:stroke-text-secondary">Stella</span>
-                </h1>
-                <p class="text-lg max-w-xl mx-auto lg:mx-0 font-semibold">
-                    With two years of experience in web development and the implementation of various e-commerce website projects, I am seeking an opportunity to apply my programming knowledge and skills to improve product quality and deliver valuable contributions to the business.
-                </p>
-                <div class="mt-6 flex justify-center lg:justify-start">
-                    <Button label="Hire me"/>
-                    <a :href="cvFile" target="_blank" class="font-semibold text-lg w-[10rem] h-[55px] dark:text-secondary rounded-full ml-2 border-2 dark:border-secondary hover:scale-105 bg-white dark:bg-transparent flex justify-center items-center text-primary border-primary">
-                        <Icon icon="line-md:download-loop" class="text-3xl"/>
-                        <span class="ml-1">Resume</span>
-                    </a>
-                </div>
-            </header>
-            <aside class="container flex justify-center mt-20 lg:mt-0 items-center flex-wrap">
-                <figure class="card relative overflow-hidden">
-                    <div class="relative image-wrapper overflow-hidden w-full h-full bg-cover transform translate-x-[25px] translate-y-[25px]">
-                        <img src="/src/assets/images/ChauThach.jpg" alt="Hero picture" class="w-full  object-cover object-center" loading="lazy">
-                    </div> 
-                </figure>
-            </aside>
-        </main>
+        <div class="container mx-auto">
+            <main class="relative grid lg:grid-cols-2 grid-cols-1 items-center p-2 lg:p-8">
+                <header class="text-center lg:text-left">
+                    <h1 class="mb-6 text-4xl md:text-5xl lg:text-6xl font-bold">
+                        👋 Hi, I'm <span class="text-secondary stroke-text-primary dark:stroke-text-secondary">Stella</span>
+                    </h1>
+                    <p class="text-lg max-w-xl mx-auto lg:mx-0 font-semibold">
+                        With two years of experience in web development and the implementation of various e-commerce website projects, I am seeking an opportunity to apply my programming knowledge and skills to improve product quality and deliver valuable contributions to the business.
+                    </p>
+                    <div class="mt-6 flex justify-center lg:justify-start">
+                        <Button label="Hire me"/>
+                        <a :href="cvFile" target="_blank" class="font-semibold text-lg w-[10rem] h-[55px] dark:text-secondary rounded-full ml-2 border-2 dark:border-secondary hover:scale-105 bg-white dark:bg-transparent flex justify-center items-center text-primary border-primary">
+                            <Icon icon="line-md:download-loop" class="text-3xl"/>
+                            <span class="ml-1">Resume</span>
+                        </a>
+                    </div>
+                </header>
+                <aside class="container flex justify-center mt-20 lg:mt-0 items-center flex-wrap">
+                    <figure class="card relative overflow-hidden">
+                        <div class="relative image-wrapper overflow-hidden w-full h-full bg-cover transform translate-x-[25px] translate-y-[25px]">
+                            <img src="/src/assets/images/ChauThach.jpg" alt="Hero picture" class="w-full  object-cover object-center" loading="lazy">
+                        </div> 
+                    </figure>
+                </aside>
+            </main>
+        </div>
     </section>
     
 </template>
